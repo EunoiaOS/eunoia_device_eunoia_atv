@@ -1,0 +1,6 @@
+runtime_resource_overlay {
+    name: "EunoiaGoogleSetupWraithOverlay",
+    theme: "EunoiaGoogleSetupWraithOverlay",
+    sdk_version: "current",
+    product_specific: true
+}
