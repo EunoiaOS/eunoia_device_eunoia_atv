@@ -14,15 +14,12 @@
      limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.google.android.tungsten.setupwraith.pairing.lineageoverlay"
+    package="com.google.android.tungsten.setupwraith.eunoiaoverlay"
     android:versionCode="1"
     android:versionName="1.0">
     <application android:hasCode="false" />
     <overlay
       android:targetPackage="com.google.android.tungsten.setupwraith"
       android:isStatic="true"
-      android:priority="0"
-      android:requiredSystemPropertyName="atv.setup.bt_remote_pairing"
-      android:requiredSystemPropertyValue="false" />
-
+      android:priority="0"/>
 </manifest>

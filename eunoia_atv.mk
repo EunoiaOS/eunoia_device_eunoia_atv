@@ -19,15 +19,15 @@ include $(LOCAL_PATH)/system_prop.mk
 
 # Overlays
 PRODUCT_PACKAGE_OVERLAYS += \
-    device/lineage/atv/overlay
+    device/eunoia/atv/overlay
 
 # Init files
 PRODUCT_PACKAGES += \
-    init.lineage.atv.rc
+    init.eunoia.atv.rc
 
 ifneq ($(TARGET_ATV_FORCE_1080_SCALING),false)
 PRODUCT_PACKAGES += \
-    init.lineage.atv.scaling.rc
+    init.eunoia.atv.scaling.rc
 endif
 
 # Dynalink 4k
@@ -120,8 +120,8 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
 
 # GMS RROs
 PRODUCT_PACKAGES += \
-    LineageGoogleSetupWraithOverlay \
-    LineageGoogleSetupWraithPairingOverlay
+    EunoiaGoogleSetupWraithOverlay \
+    EunoiaGoogleSetupWraithPairingOverlay
 
 # Settings
 PRODUCT_PACKAGES += \
@@ -134,7 +134,7 @@ PRODUCT_PACKAGES += \
 
 # priv-app permissions
 PRODUCT_COPY_FILES +=\
-    device/lineage/atv/permissions/privapp-permissions-lineage-atv.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-lineage-atv.xml
+    device/eunoia/atv/permissions/privapp-permissions-eunoia-atv.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-eunoia-atv.xml
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
